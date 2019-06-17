@@ -77,7 +77,7 @@ p {
 
 .header {
     position: absolute;
-    left: 60%;
+    left: 55%;
     top: 50%;
     transform: translateY(-50%);
 }

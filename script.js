@@ -7,7 +7,7 @@ function init() {
     createPrimitive();
     //---
     animation();
-    animateCSS(".header", "fadeIn")
+    animateCSS("#container", "fadeIn")
 }
 
 var Theme = { _darkred: 0x000000 }

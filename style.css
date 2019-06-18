@@ -124,6 +124,7 @@ p {
     position: relative;
     color: #aaa;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .link:hover {

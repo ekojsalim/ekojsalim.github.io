@@ -107,6 +107,12 @@ a:hover {
         letter-spacing: 1px !important;
         width: 90vw;
     }
+    .link {
+        text-decoration: underline !important;
+    }
+    .link:before {
+        background-color: #000000 !important;
+    }
 }
 
 .links {

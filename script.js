@@ -43,10 +43,13 @@ var scene, camera, renderer, container;
 var start = Date.now();
 var _width, _height;
 
+const canvasEl = document.querySelector("canvas");
+const canvas = ('OffscreenCanvas' in window) ? canvasEl.transferControlToOffscreen() : canvasEl;
+
 function createWorld() {
     _width = window.innerWidth * (isMobile() ? 1 : 0.6);
     _height = window.innerHeight;
-    console.log(_width, _height, isMobile)
+    canvas.style = { width: _width, height: _height }
         //---
     scene = new THREE.Scene();
     //scene.fog = new THREE.Fog(Theme._darkred, 8, 20);
@@ -55,11 +58,11 @@ function createWorld() {
     camera = new THREE.PerspectiveCamera(55, _width / _height, 1, 1000);
     camera.position.z = 12;
     //---
-    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+    renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false, canvas: canvas });
     renderer.setSize(_width, _height);
     //---
     container = document.getElementById("container");
-    container.appendChild(renderer.domElement);
+    // container.appendChild(renderer.domElement);
     //---
     window.addEventListener('resize', onWindowResize, false);
 }

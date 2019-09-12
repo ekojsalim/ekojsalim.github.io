@@ -74,6 +74,10 @@ self.__precacheManifest = [
     "revision": "1cdfd3795c23477df5646602cde82328"
   },
   {
+    "url": "mpktb.html",
+    "revision": "139b506b9be8651aa2ce006a8f28608d"
+  },
+  {
     "url": "projects/analisis2019.png",
     "revision": "702665e4d921d51df56939b0181ce995"
   },

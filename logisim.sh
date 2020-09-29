@@ -12,6 +12,6 @@ if test -f "$FILE"; then
     java -jar $FILE
 else
     echo "$FILE doesn't exists. Downloading"
-    curl -o ~/Desktop/logisim.jar  http://ekojs.com/logisim.jar
+    curl -o ~/Desktop/logisim.jar  https://ekojs.com/logisim.jar
     java -jar $FILE
 fi
